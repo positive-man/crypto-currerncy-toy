@@ -26,7 +26,7 @@ def main():
     print('=' * 100)
 
     print('Ohlcv per a minute as list:')
-    # 여러 번의 API 호출 후 결과를 병합하여 반환하기 때문에 다시 시간 소요됩니다.
+    # 여러 번의 API 호출 후 결과를 병합하여 반환하기 때문에 다소 시간 소요됩니다.
     # 오랜 기간에 대해 아래와 같은 방법으로 데이터를 받아오는 과정에서 메모리 터질 수 있음에 주의 바랍니다.
     result = list(fetcher.fetch_ohlcv(
         symbol='ETH/BTC',
